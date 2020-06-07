@@ -1,8 +1,11 @@
+import { StyleSheet } from 'react-native';
+import Constants from 'expo-constants';
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 32,
-    paddingTop: 20,
+    paddingTop: 20 + Constants.statusBarHeight,
   },
 
   pointImage: {
@@ -71,3 +74,5 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto_500Medium',
   },
 });
+
+export default styles;
